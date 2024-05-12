@@ -1,0 +1,26 @@
+{
+    "name": "ton-stream",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "clean": "rm -rf build/",
+        "build": "rm -rf build/ && tsc",
+        "start": "node build/index.js",
+        "dev": "ts-node-dev --respawn --transpile-only index.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^1.6.8",
+        "dotenv": "^16.4.5",
+        "typescript": "^5.4.5",
+        "ws": "^8.17.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.12.11",
+        "@types/ws": "^8.5.10",
+        "ts-node-dev": "^2.0.0"
+    }
+}
